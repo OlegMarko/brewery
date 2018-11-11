@@ -685,7 +685,6 @@
 
 @font-face {
     font-family: BitterRegular;
-    src: url(../fonts/Bitter-Regular.otf);
     font-style: normal;
     font-weight: 400
 }
@@ -5860,7 +5859,6 @@ h1 {
 }
 
 .button_assort_wrap:before {
-    background-image: url(../images/vector/slide1/beer_pint.svg);
     height: 41px;
     width: 35px;
     background-size: contain;
@@ -6003,7 +6001,6 @@ h1 {
 }
 
 .i_facebook {
-    background-image: url(../images/vector/footer/facebook-logo.svg)
 }
 
 .i_facebook:hover {
@@ -7677,7 +7674,6 @@ h1 {
 }
 
 .figure_arrow_right {
-    background-image: url(../images/vector/slide1/arrow_menu_1.svg);
     margin-left: -6px
 }
 
@@ -7692,7 +7688,6 @@ h1 {
 }
 
 .figure_arrow_left {
-    background-image: url(../images/vector/slide1/arrow_menu_2.svg);
     position: absolute;
     left: 0;
     top: 0;
@@ -7715,7 +7710,7 @@ h1 {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 55px;
     left: 0;
     right: 0;
@@ -7925,7 +7920,6 @@ header .header__wrap ul li a:before {
     margin: auto;
     width: 8px;
     height: 8px;
-    background-image: url(../images/vector/slide1/circle.svg);
     background-repeat: no-repeat;
     background-size: contain;
     transition: all .5s;
@@ -7981,11 +7975,9 @@ header .header__wrap ul li.current_page_item a:before {
     }
     header .header__wrap ul li.current_page_item:before {
         right: -8px;
-        background-image: url(../images/vector/slide1/arrow_menu_1.svg)
     }
     header .header__wrap ul li.current_page_item:after {
         left: -8px;
-        background-image: url(../images/vector/slide1/arrow_menu_2.svg)
     }
 }
 
@@ -8051,7 +8043,6 @@ header .header__wrap .left__nav:before {
     position: absolute;
     right: 0;
     left: -17px;
-    background-image: url(../images/line.svg);
     height: 4px;
     width: 100%;
     background-repeat: repeat-x
@@ -8107,7 +8098,6 @@ header .header__wrap .right__nav:before {
     position: absolute;
     right: 0;
     left: 17px;
-    background-image: url(../images/line.svg);
     height: 4px;
     width: 100%;
     background-repeat: repeat-x
@@ -8195,7 +8185,6 @@ footer:before {
     top: 0;
     left: 0;
     right: 0;
-    background-image: url(../images/line.svg);
     background-repeat: repeat-x;
     width: 100%;
     height: 5px
@@ -8585,7 +8574,6 @@ footer .footer ul li:last-child {
 }
 
 .age_block .btn_i_have_18 .beer_icon {
-    background-image: url(../images/vector/slide1/beer_pint.svg);
     width: 33px;
     height: 40px;
     background-position: 50%;
@@ -9002,7 +8990,6 @@ footer .footer ul li:last-child {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../images/IMG_1490.jpg) no-repeat;
     background-size: cover;
     transition: opacity 1s
 }
@@ -9744,12 +9731,10 @@ ul.slick-dots li.slick-active button:before {
 }
 
 .beer_name>.jager_font:last-child:before {
-    background-image: url(../images/vector/slide1/arrow_menu_1.svg);
     right: -28px
 }
 
 .beer_name>.jager_font:last-child:after {
-    background-image: url(../images/vector/slide1/arrow_menu_2.svg);
     left: -28px
 }
 
@@ -11398,7 +11383,6 @@ ul.suslo li.one_suslo:after {
 }
 
 #preloader_block .preloader_arrow:before {
-    background-image: url(../images/vector/slide1/arrow_menu_1.svg);
     width: 16px;
     height: 12px;
     left: 25px;
@@ -11417,7 +11401,6 @@ ul.suslo li.one_suslo:after {
 }
 
 #preloader_block .preloader_arrow:after {
-    background-image: url(../images/vector/slide1/arrow_menu_2.svg);
     width: 20px;
     height: 15px;
     right: 21px;
