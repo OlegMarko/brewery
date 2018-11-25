@@ -5647,8 +5647,8 @@ h1 {
     transform: rotate(-45deg)
 }
 
-.gallery_slider_next,
-.gallery_slider_prev,
+.slider-next,
+.slider-prev,
 .review_slider_next,
 .review_slider_prev {
     background-color: transparent;
@@ -5661,8 +5661,8 @@ h1 {
     z-index: 10
 }
 
-.gallery_slider_next div,
-.gallery_slider_prev div,
+.slider-next div,
+.slider-prev div,
 .review_slider_next div,
 .review_slider_prev div {
     display: none;
@@ -5677,14 +5677,14 @@ h1 {
     margin-top: .375rem
 }
 
-.gallery_slider_next:hover div,
-.gallery_slider_prev:hover div,
+.slider-next:hover div,
+.slider-prev:hover div,
 .review_slider_next:hover div,
 .review_slider_prev:hover div {
     display: block
 }
 
-.gallery_slider_next i:first-child,
+.slider-next i:first-child,
 .review_slider_next i:first-child {
     position: absolute;
     z-index: 2;
@@ -5692,7 +5692,7 @@ h1 {
     top: 0
 }
 
-.gallery_slider_next i:last-child,
+.slider-next i:last-child,
 .review_slider_next i:last-child {
     position: absolute;
     top: 0;
@@ -5700,23 +5700,23 @@ h1 {
     z-index: 1
 }
 
-.gallery_slider_next:hover,
+.slider-next:hover,
 .review_slider_next:hover {
     opacity: 1
 }
 
-.gallery_slider_next:hover i:first-child,
+.slider-next:hover i:first-child,
 .review_slider_next:hover i:first-child {
     right: -2px
 }
 
-.gallery_slider_prev i,
+.slider-prev i,
 .review_slider_prev i {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1)
 }
 
-.gallery_slider_prev i:first-child,
+.slider-prev i:first-child,
 .review_slider_prev i:first-child {
     position: absolute;
     z-index: 2;
@@ -5724,7 +5724,7 @@ h1 {
     top: 0
 }
 
-.gallery_slider_prev i:last-child,
+.slider-prev i:last-child,
 .review_slider_prev i:last-child {
     position: absolute;
     top: 0;
@@ -5732,12 +5732,12 @@ h1 {
     z-index: 1
 }
 
-.gallery_slider_prev:hover,
+.slider-prev:hover,
 .review_slider_prev:hover {
     opacity: 1
 }
 
-.gallery_slider_prev:hover i:first-child,
+.slider-prev:hover i:first-child,
 .review_slider_prev:hover i:first-child {
     right: 2px
 }
@@ -5788,12 +5788,12 @@ h1 {
     }
 }
 
-.gallery_slider_next {
+.slider-next {
     bottom: 50%;
     right: 0
 }
 
-.gallery_slider_prev {
+.slider-prev {
     bottom: 50%;
     left: calc(0% + 77px)
 }
@@ -5830,7 +5830,7 @@ h1 {
     -ms-flex-align: center;
     align-items: center;
     color: #fefefe;
-    border: 1px solid #fcb040;
+    border: 1px solid #c00;
     background-color: rgba(0, 0, 0, .7);
     z-index: 3;
     box-sizing: border-box
@@ -5882,7 +5882,7 @@ h1 {
     background-image: url(../images/);
     width: 10px;
     height: 10px;
-    background-color: #fcb040;
+    background-color: #c00;
     border-radius: 50%;
     left: 0;
     bottom: -40px
@@ -5918,8 +5918,8 @@ h1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border: 1px solid #fcb040;
-    color: #fcb040;
+    border: 1px solid #c00;
+    color: #c00;
     font-size: 1.125rem;
     transition: all .5s ease
 }
@@ -5965,7 +5965,7 @@ h1 {
 }
 
 .btn_error_wrap:hover .btn_error {
-    color: #fcb040
+    color: #c00
 }
 
 .btn_error_wrap:hover:before {
@@ -6031,13 +6031,13 @@ h1 {
     background-image: url(../images/vector/footer/pinterest-hover.svg)
 }
 
-.i_mini_arrow {
-    width: 77px;
-    height: 30px
+.arrow-m {
+    width: 100px;
+    height: 80px
 }
 
 .i_hop,
-.i_mini_arrow {
+.arrow-m {
     display: inline-block;
     background-size: contain;
     background-repeat: no-repeat;
@@ -6173,7 +6173,7 @@ h1 {
     margin: 50px auto
 }
 
-.i_mini_arrow_404 {
+.arrow-m_404 {
     display: inline-block;
     height: 16px;
     width: 36px;
@@ -6185,7 +6185,7 @@ h1 {
 
 .i_alert_arrow-left,
 .i_alert_arrow-right,
-.i_mini_arrow_404 {
+.arrow-m_404 {
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat
@@ -6254,7 +6254,7 @@ h1 {
 }
 
 .about_buble_1 {
-    background: #fcb040;
+    background: #c00;
     border-radius: 100%;
     box-shadow: inset 0 0 15px 0 hsla(36, 94%, 69%, .45)
 }
@@ -6268,7 +6268,7 @@ h1 {
 
 .about_buble_2 {
     border-radius: 100%;
-    border: 3px solid #fcb040
+    border: 3px solid #c00
 }
 
 .move {
@@ -7452,7 +7452,7 @@ h1 {
     right: 8px;
     height: 23px;
     width: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     -webkit-transform: rotate(35deg);
     transform: rotate(35deg);
     z-index: 1
@@ -7463,7 +7463,7 @@ h1 {
     position: absolute;
     width: 15px;
     height: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     top: 30px;
     right: 0
 }
@@ -7480,7 +7480,7 @@ h1 {
     right: 8px;
     height: 23px;
     width: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     -webkit-transform: rotate(-35deg);
     transform: rotate(-35deg);
     z-index: 1
@@ -7491,7 +7491,7 @@ h1 {
     position: absolute;
     width: 15px;
     height: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     top: 4px;
     right: 0
 }
@@ -7535,7 +7535,7 @@ h1 {
     right: -10px;
     height: 23px;
     width: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     -webkit-transform: rotate(35deg);
     transform: rotate(35deg);
     z-index: 1
@@ -7546,7 +7546,7 @@ h1 {
     position: absolute;
     width: 15px;
     height: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     bottom: 30px
 }
 
@@ -7562,7 +7562,7 @@ h1 {
     right: 13px;
     height: 23px;
     width: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     -webkit-transform: rotate(-35deg);
     transform: rotate(-35deg);
     z-index: 1
@@ -7573,7 +7573,7 @@ h1 {
     position: absolute;
     width: 15px;
     height: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     bottom: 4px
 }
 
@@ -7617,7 +7617,7 @@ h1 {
     position: absolute;
     top: -25px;
     left: 2px;
-    background-color: #fcb040;
+    background-color: #c00;
     border-bottom-left-radius: 1px
 }
 
@@ -7628,7 +7628,7 @@ h1 {
     position: absolute;
     top: -18px;
     left: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     -webkit-transform: rotate(-13deg);
     transform: rotate(-13deg);
     border-bottom-left-radius: 3px
@@ -7649,7 +7649,7 @@ h1 {
     top: -25px;
     right: 2px;
     border-bottom-right-radius: 1px;
-    background-color: #fcb040
+    background-color: #c00
 }
 
 .nav_figure .nav_figure_triange_2:after {
@@ -7659,7 +7659,7 @@ h1 {
     position: absolute;
     top: -18px;
     right: 1px;
-    background-color: #fcb040;
+    background-color: #c00;
     -webkit-transform: rotate(13deg);
     transform: rotate(13deg);
     border-bottom-right-radius: 3px
@@ -7698,7 +7698,7 @@ h1 {
 .figure_arrow_main {
     height: 1px;
     width: 100%;
-    background-color: #fcb040
+    background-color: #c00
 }
 
 .figure_small_circle {
@@ -7706,7 +7706,7 @@ h1 {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #fcb040
+    background-color: #c00
 }
 
 header {
@@ -7751,7 +7751,7 @@ header .button-container {
     width: 50px;
     height: 46px;
     background-color: #0a0a0a;
-    border: 2px solid #fcb040;
+    border: 2px solid #c00;
     border-top: none
 }
 
@@ -7834,8 +7834,8 @@ header .header-container nav.open_menu .nav_figure {
 
 header .header-container ul {
     height: 100%;
-    border-top: 1px solid #fcb040;
-    border-bottom: 1px solid #fcb040;
+    border-top: 1px solid #c00;
+    border-bottom: 1px solid #c00;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7860,8 +7860,8 @@ header .header-container ul {
         height: 100%;
         border-top: 0;
         border-bottom: 0;
-        border-left: 3px solid #fcb040;
-        border-right: 3px solid #fcb040
+        border-left: 3px solid #c00;
+        border-right: 3px solid #c00
     }
 }
 
@@ -7898,7 +7898,7 @@ header .header-container ul li a {
 }
 
 header .header-container ul li a:hover {
-    color: #fcb040
+    color: #c00
 }
 
 header .header-container ul li a:hover:after {
@@ -7941,7 +7941,7 @@ header .header-container ul li a:after {
 }
 
 header .header-container ul li.current_page_item a {
-    color: #fcb040
+    color: #c00
 }
 
 header .header-container ul li.current_page_item a:after {
@@ -8172,7 +8172,7 @@ header .header-container .right__nav:before {
 
 footer {
     overflow: hidden;
-    color: #fcb040;
+    color: #c00;
     font-size: .75rem;
     position: relative;
     background-color: #0a0a0a;
@@ -8241,7 +8241,7 @@ footer .footer-b-center ul {
 
 footer .footer-b-center ul li {
     font-size: .625rem;
-    color: #fcb040;
+    color: #c00;
     text-align: center
 }
 
@@ -8466,7 +8466,7 @@ footer .footer ul li:last-child {
 @-moz-document url-prefix() {
     .age_block .age_block {
         border-image: none;
-        border: 1px solid #fcb040
+        border: 1px solid #c00
     }
 }
 
@@ -8501,14 +8501,14 @@ footer .footer ul li:last-child {
     height: 700px
 }
 
-.age_block .jager_logo {
+.age_block .qw_logo {
     width: 235px;
     height: 220px;
     margin: 1.5rem auto
 }
 
 @media screen and (max-width:90rem) {
-    .age_block .jager_logo {
+    .age_block .qw_logo {
         width: 180px;
         height: 180px;
         margin: 1rem auto .5rem
@@ -8516,7 +8516,7 @@ footer .footer ul li:last-child {
 }
 
 @media screen and (max-width:40rem) {
-    .age_block .jager_logo {
+    .age_block .qw_logo {
         width: 200px;
         height: 200px
     }
@@ -8552,7 +8552,7 @@ footer .footer ul li:last-child {
     -ms-flex-align: center;
     align-items: center;
     padding: 1rem;
-    border: 1px solid #fcb040;
+    border: 1px solid #c00;
     max-width: 300px;
     margin: 4rem auto 1rem
 }
@@ -8565,7 +8565,7 @@ footer .footer ul li:last-child {
 
 .age_block .btn_i_have_18 span {
     font-size: 1.125rem;
-    color: #fcb040
+    color: #c00
 }
 
 @media screen and (max-width:90rem) {
@@ -8621,7 +8621,7 @@ footer .footer ul li:last-child {
 
 .age_block .btn_i_not_have_18 {
     font-size: .875rem;
-    color: #fcb040;
+    color: #c00;
     text-align: center;
     display: block;
     margin: 0 auto 1.5rem;
@@ -8633,7 +8633,7 @@ footer .footer ul li:last-child {
 .age_block .btn_i_not_have_18:before {
     content: "";
     width: 100%;
-    border-bottom: 1px dotted #fcb040;
+    border-bottom: 1px dotted #c00;
     position: absolute;
     bottom: -2px
 }
@@ -8789,7 +8789,7 @@ footer .footer ul li:last-child {
 
 .border_age_inside,
 .border_age_outside {
-    border: 1px solid #fcb040
+    border: 1px solid #c00
 }
 
 .border_age_inside {
@@ -8812,11 +8812,11 @@ footer .footer ul li:last-child {
     }
 }
 
-.jager_font {
+.qw_font {
     text-align: center;
     position: relative;
     text-transform: uppercase;
-    color: #fcb040;
+    color: #c00;
     font-size: 3rem;
     text-shadow: none;
     font-family: BitterBold, Georgia, Times New Roman;
@@ -8825,18 +8825,18 @@ footer .footer ul li:last-child {
 }
 
 @media screen and (max-width:30rem) {
-    .jager_font {
+    .qw_font {
         font-size: 2rem
     }
 }
 
 @media screen and (max-width:21.25rem) {
-    .jager_font {
+    .qw_font {
         font-size: 1.7rem
     }
 }
 
-.jager_font span {
+.qw_font span {
     position: absolute;
     color: #fefefe;
     top: -3px;
@@ -8919,7 +8919,7 @@ footer .footer ul li:last-child {
 .block-container ul li {
     text-transform: uppercase;
     position: absolute;
-    color: #fcb040;
+    color: #c00;
     font-size: 2.375rem;
     text-shadow: none;
     -webkit-transform: skewY(-8deg);
@@ -8944,7 +8944,7 @@ footer .footer ul li:last-child {
     left: 245px;
     margin: auto;
     top: 120px;
-    color: #fcb040;
+    color: #c00;
     font-family: BitterRegular, Georgia, Times New Roman
 }
 
@@ -9046,11 +9046,11 @@ footer .footer ul li:last-child {
     z-index: 1
 }
 
-.jager_slider {
+.slider-container {
     position: relative
 }
 
-.jager_slider__item {
+.slider-container-i {
     width: 100%;
     min-height: 100vh;
     height: 100%;
@@ -9059,7 +9059,7 @@ footer .footer ul li:last-child {
     background-repeat: no-repeat
 }
 
-.gallery_buttons_wrap {
+.slider-buttons-container {
     position: relative;
     max-width: 101.25rem;
     margin: 0 auto;
@@ -9067,25 +9067,25 @@ footer .footer ul li:last-child {
 }
 
 @media screen and (max-width:102.5rem) {
-    .gallery_buttons_wrap {
+    .slider-buttons-container {
         max-width: 100%;
         margin: 0 4rem
     }
 }
 
 @media screen and (max-width:63.9375rem) {
-    .gallery_buttons_wrap {
+    .slider-buttons-container {
         margin: 0 2rem
     }
 }
 
 @media screen and (max-width:40rem) {
-    .gallery_buttons_wrap {
+    .slider-buttons-container {
         margin: 0 1rem
     }
 }
 
-.gallery_buttons_position {
+.slider-buttons {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -9106,7 +9106,7 @@ ul.slick-dots {
 
 ul.slick-dots li {
     display: inline-block;
-    margin-right: .625rem;
+    margin-right: 10px;
     position: relative
 }
 
@@ -9115,7 +9115,7 @@ ul.slick-dots li button {
     height: 25px;
     border-radius: 50%;
     background-color: #0a0a0a;
-    border: 2px solid #fcb040;
+    border: 2px solid #c00;
     color: transparent;
     cursor: pointer;
     transition: all .5s ease;
@@ -9130,7 +9130,7 @@ ul.slick-dots li button:after {
     right: -14px;
     width: 12px;
     height: 2px;
-    background-color: #fcb040
+    background-color: #c00
 }
 
 ul.slick-dots li button:hover {
@@ -9162,7 +9162,7 @@ ul.slick-dots li:last-child:before {
     content: "";
     width: 20px;
     height: 2px;
-    background-color: #fcb040;
+    background-color: #c00;
     position: absolute;
     top: 14px
 }
@@ -9206,7 +9206,7 @@ ul.slick-dots li.slick-active button:before {
     right: 0
 }
 
-.section_map #jager_map {
+.section_map #qw_map {
     width: 100%;
     height: 760px;
     min-height: 100vh
@@ -9364,26 +9364,26 @@ ul.slick-dots li.slick-active button:before {
     }
 }
 
-.about_jager {
+.about_qw {
     margin-top: 230px;
     position: relative;
     height: 100%
 }
 
-.about_jager .jager_content {
+.about_qw .qw_content {
     padding-bottom: 1.5rem;
     position: relative;
     z-index: 1;
-    background-color: #fcb040
+    background-color: #c00
 }
 
 @media screen and (max-width:63.9375rem) {
-    .about_jager .jager_content {
+    .about_qw .qw_content {
         padding: .5rem
     }
 }
 
-.about_jager .jager_content>p {
+.about_qw .qw_content>p {
     -ms-text-align-last: left;
     text-align-last: left;
     margin-top: 1.5rem;
@@ -9393,15 +9393,15 @@ ul.slick-dots li.slick-active button:before {
     font-size: .875rem
 }
 
-.about_jager .jager_content>p:first-child {
+.about_qw .qw_content>p:first-child {
     margin-top: 3.5rem
 }
 
-.about_jager .jager_content>p:last-child {
+.about_qw .qw_content>p:last-child {
     margin-bottom: 3rem
 }
 
-.about_jager .timeline {
+.about_qw .timeline {
     max-width: 784px;
     width: 100%;
     margin: 1rem auto;
@@ -9417,7 +9417,7 @@ ul.slick-dots li.slick-active button:before {
     position: relative
 }
 
-.about_jager .timeline:before {
+.about_qw .timeline:before {
     content: "";
     position: absolute;
     top: 0;
@@ -9429,8 +9429,8 @@ ul.slick-dots li.slick-active button:before {
     z-index: 1
 }
 
-.about_jager .timeline i {
-    background-color: #fcb040;
+.about_qw .timeline i {
+    background-color: #c00;
     z-index: 2;
     padding: 0 .5rem;
     position: relative;
@@ -9438,13 +9438,13 @@ ul.slick-dots li.slick-active button:before {
     font-size: .875rem
 }
 
-.about_jager .timeline i span {
+.about_qw .timeline i span {
     position: absolute;
     top: 5px;
     right: -45px
 }
 
-.about_jager #water_bg {
+.about_qw #water_bg {
     position: absolute;
     top: -250px;
     left: 0;
@@ -9455,7 +9455,7 @@ ul.slick-dots li.slick-active button:before {
 }
 
 @media screen and (max-width:40rem) {
-    .about_jager #water_bg {
+    .about_qw #water_bg {
         top: -220px
     }
 }
@@ -9478,8 +9478,8 @@ ul.slick-dots li.slick-active button:before {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 2px solid #fcb040;
-    background: #fcb040;
+    border: 2px solid #c00;
+    background: #c00;
     will-change: transform;
     transition: 5s
 }
@@ -9707,18 +9707,18 @@ ul.slick-dots li.slick-active button:before {
     justify-content: center
 }
 
-.beer_name>.jager_font {
+.beer_name>.qw_font {
     font-size: 2rem;
     font-family: BitterRegular, Georgia, Times New Roman;
     line-height: 1.4
 }
 
-.beer_name>.jager_font:last-child {
+.beer_name>.qw_font:last-child {
     position: relative
 }
 
-.beer_name>.jager_font:last-child:after,
-.beer_name>.jager_font:last-child:before {
+.beer_name>.qw_font:last-child:after,
+.beer_name>.qw_font:last-child:before {
     content: "";
     width: 25px;
     height: 15px;
@@ -9731,11 +9731,11 @@ ul.slick-dots li.slick-active button:before {
     margin: auto 0
 }
 
-.beer_name>.jager_font:last-child:before {
+.beer_name>.qw_font:last-child:before {
     right: -28px
 }
 
-.beer_name>.jager_font:last-child:after {
+.beer_name>.qw_font:last-child:after {
     left: -28px
 }
 
@@ -9788,7 +9788,7 @@ ul.slick-dots li.slick-active button:before {
 .beer_border {
     padding: 1rem;
     position: relative;
-    border: 1px solid #fcb040;
+    border: 1px solid #c00;
     text-align: center;
     margin: 1.25rem 0
 }
@@ -9841,7 +9841,7 @@ ul.slick-dots li.slick-active button:before {
     content: "";
     width: 10px;
     height: 10px;
-    border: 1px solid #fcb040;
+    border: 1px solid #c00;
     position: absolute
 }
 
@@ -9957,7 +9957,7 @@ ul.slick-dots li.slick-active button:before {
 
 .procent {
     margin: 0 .5rem;
-    color: #fcb040;
+    color: #c00;
     font-size: 2.625rem;
     line-height: 1
 }
@@ -10242,8 +10242,8 @@ ul.suslo li.one_suslo:after {
 
 .people_review {
     width: 100%;
-    border-top: 1px solid #fcb040;
-    border-bottom: 1px solid #fcb040;
+    border-top: 1px solid #c00;
+    border-bottom: 1px solid #c00;
     background-color: #0a0a0a;
     padding-bottom: 2.5rem;
     position: relative;
@@ -10309,7 +10309,7 @@ ul.suslo li.one_suslo:after {
 }
 
 .people_review_photo-circle:before {
-    border: 1px solid #fcb040;
+    border: 1px solid #c00;
     border-radius: 50%
 }
 
@@ -10327,12 +10327,12 @@ ul.suslo li.one_suslo:after {
 }
 
 .people_review_photo-square:before {
-    border: 1px solid #fcb040
+    border: 1px solid #c00
 }
 
 .people_review_name {
     font-family: BitterRegular, Georgia, Times New Roman;
-    color: #fcb040;
+    color: #c00;
     font-size: 18px;
     margin-bottom: 0;
     text-align: center
@@ -10342,7 +10342,7 @@ ul.suslo li.one_suslo:after {
     text-align: center;
     margin: 0;
     font-size: .875rem;
-    color: #fcb040
+    color: #c00
 }
 
 .people_review_text {
@@ -10357,7 +10357,7 @@ ul.suslo li.one_suslo:after {
 .people_review_text:after,
 .people_review_text:before {
     content: ' " ';
-    color: #fcb040
+    color: #c00
 }
 
 .event_statistic {
@@ -10748,7 +10748,7 @@ ul.suslo li.one_suslo:after {
 }
 
 .subscribe__form__success__text {
-    color: #fcb040;
+    color: #c00;
     margin-bottom: .5rem;
     font-size: 1.125rem!important;
     text-transform: uppercase
@@ -10812,10 +10812,10 @@ ul.suslo li.one_suslo:after {
     display: block;
     max-width: 480px;
     border: none;
-    border-bottom: 1px solid #fcb040;
+    border-bottom: 1px solid #c00;
     background-color: transparent;
     box-shadow: none;
-    color: #fcb040;
+    color: #c00;
     margin: 0
 }
 
@@ -10827,11 +10827,11 @@ ul.suslo li.one_suslo:after {
 .subscribe__input input[type=text]:valid~label {
     top: -10px;
     font-size: .625rem;
-    color: #fcb040
+    color: #c00
 }
 
 .subscribe__input label {
-    color: #fcb040;
+    color: #c00;
     font-weight: 400;
     position: absolute;
     pointer-events: none;
@@ -10854,7 +10854,7 @@ ul.suslo li.one_suslo:after {
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #fcb040;
+    background: #c00;
     transition: all .2s ease
 }
 
@@ -10922,7 +10922,7 @@ ul.suslo li.one_suslo:after {
     .subscribe__submit {
         margin-top: 2rem;
         margin-left: 0;
-        border: 1px solid #fcb040;
+        border: 1px solid #c00;
         padding: .625rem
     }
 }
@@ -10930,7 +10930,7 @@ ul.suslo li.one_suslo:after {
 .subscribe__submit input[type=submit] {
     outline: none;
     background: transparent;
-    color: #fcb040;
+    color: #c00;
     font-family: BitterBold, Georgia, Times New Roman;
     font-size: 1.5rem;
     border: none;
@@ -11130,7 +11130,7 @@ ul.suslo li.one_suslo:after {
 }
 
 .circle__event:hover .circle__event__item {
-    border-color: #fcb040
+    border-color: #c00
 }
 
 .circle__event.circle__event-active {
@@ -11140,7 +11140,7 @@ ul.suslo li.one_suslo:after {
 }
 
 .circle__event.circle__event-active .circle__event__item {
-    border: 2px solid #fcb040
+    border: 2px solid #c00
 }
 
 .circle__event.circle__event-active .circle__event__icon {
@@ -11287,7 +11287,7 @@ ul.suslo li.one_suslo:after {
     align-items: center
 }
 
-#preloader_block .logo_jager_wrap {
+#preloader_block .logo_qw_wrap {
     position: relative;
     width: 290px;
     height: 290px;
@@ -11377,7 +11377,7 @@ ul.suslo li.one_suslo:after {
     height: 222px;
     border-radius: 100%;
     border: 2px solid transparent;
-    border-top-color: #fcb040;
+    border-top-color: #c00;
     z-index: 1;
     -webkit-animation: spin 1s infinite linear;
     animation: spin 1s infinite linear
@@ -11533,7 +11533,7 @@ ul.suslo li.one_suslo:after {
 }
 
 .pimp_info {
-    background-color: #fcb040;
+    background-color: #c00;
     padding: .5rem 0;
     height: 40px;
     position: relative
@@ -11545,7 +11545,7 @@ ul.suslo li.one_suslo:after {
     left: -40px;
     top: 0;
     border: 20px solid transparent;
-    border-right: 20px solid #fcb040
+    border-right: 20px solid #c00
 }
 
 .pimp_info:after {
@@ -11554,7 +11554,7 @@ ul.suslo li.one_suslo:after {
     top: 0;
     right: -40px;
     border: 20px solid transparent;
-    border-left: 20px solid #fcb040
+    border-left: 20px solid #c00
 }
 
 .map_popup_slider>.slick-dots {
@@ -11609,7 +11609,7 @@ ul.suslo li.one_suslo:after {
 
 .close-button {
     position: absolute;
-    color: #fcb040!important;
+    color: #c00!important;
     font-size: 1.5rem;
     top: -5px;
     right: 3px
