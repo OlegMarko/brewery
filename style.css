@@ -5510,7 +5510,7 @@ screen and (min-width:75em) {
 
 body {
     font-size: 16px!important;
-    color: #0a0a0a;
+    color: #020202;
     line-height: 24px;
     font-family: BitterRegular, Georgia, Times New Roman;
     position: relative;
@@ -6055,13 +6055,13 @@ h1 {
     }
 }
 
-.i_advantages {
+.i_adv {
     width: 110px;
     height: 85px;
     margin-bottom: 1.125rem
 }
 
-.i_advantages,
+.i_adv,
 .i_bow {
     display: inline-block;
     background-size: contain;
@@ -7440,7 +7440,7 @@ h1 {
 }
 
 .figure.figure-left .figure__triangle_1 {
-    border-top: 35px solid #0a0a0a;
+    border-top: 35px solid #020202;
     border-left: 22px solid transparent;
     position: relative
 }
@@ -7470,7 +7470,7 @@ h1 {
 
 .figure.figure-left .figure__triangle_2 {
     border-left: 22px solid transparent;
-    border-bottom: 35px solid #0a0a0a
+    border-bottom: 35px solid #020202
 }
 
 .figure.figure-left .figure__triangle_2:before {
@@ -7523,7 +7523,7 @@ h1 {
 }
 
 .figure.figure-right .figure__triangle_1 {
-    border-top: 35px solid #0a0a0a;
+    border-top: 35px solid #020202;
     border-right: 22px solid transparent;
     position: relative
 }
@@ -7552,7 +7552,7 @@ h1 {
 
 .figure.figure-right .figure__triangle_2 {
     border-right: 22px solid transparent;
-    border-bottom: 35px solid #0a0a0a
+    border-bottom: 35px solid #020202
 }
 
 .figure.figure-right .figure__triangle_2:before {
@@ -7606,7 +7606,7 @@ h1 {
 .nav_figure .nav_figure_triange_1 {
     position: absolute;
     left: 2px;
-    border-top: 25px solid #0a0a0a;
+    border-top: 25px solid #020202;
     border-right: 112px solid transparent
 }
 
@@ -7637,7 +7637,7 @@ h1 {
 .nav_figure .nav_figure_triange_2 {
     position: absolute;
     right: 3px;
-    border-top: 25px solid #0a0a0a;
+    border-top: 25px solid #020202;
     border-left: 112px solid transparent
 }
 
@@ -7737,6 +7737,12 @@ header .logo {
     z-index: 1
 }
 
+@media screen and (max-width:63.9375rem) {
+    .contact header .logo {
+        top: 55px
+    }
+}
+
 header .button-container,
 header .logo {
     position: absolute;
@@ -7750,7 +7756,7 @@ header .button-container {
     bottom: -130px;
     width: 50px;
     height: 46px;
-    background-color: #0a0a0a;
+    background-color: #020202;
     border: 2px solid #c00;
     border-top: none
 }
@@ -7886,7 +7892,7 @@ header .header-container ul li {
 }
 
 header .header-container ul li a {
-    background-color: #0a0a0a;
+    background-color: #020202;
     padding: 0 2px;
     position: relative;
     display: block;
@@ -7987,7 +7993,7 @@ header .header-container .nav-r {
     width: 50%;
     position: relative;
     padding: 4px 0;
-    background-color: #0a0a0a
+    background-color: #020202
 }
 
 @media screen and (max-width:71.25rem) {
@@ -8175,7 +8181,7 @@ footer {
     color: #c00;
     font-size: .75rem;
     position: relative;
-    background-color: #0a0a0a;
+    background-color: #020202;
     background-position: 49.6% 15px
 }
 
@@ -8407,7 +8413,7 @@ footer .footer ul li:last-child {
     height: 100%;
     min-height: 100vh;
     position: relative;
-    background-color: #0a0a0a;
+    background-color: #020202;
     color: #fefefe
 }
 
@@ -8691,7 +8697,7 @@ footer .footer ul li:last-child {
 }
 
 .section_404 {
-    background: #0a0a0a;
+    background: #020202;
     min-height: 100vh;
     height: 100%;
     display: -webkit-box;
@@ -9114,7 +9120,7 @@ ul.slick-dots li button {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #0a0a0a;
+    background-color: #020202;
     border: 2px solid #c00;
     color: transparent;
     cursor: pointer;
@@ -9206,15 +9212,24 @@ ul.slick-dots li.slick-active button:before {
     right: 0
 }
 
-.section_map #qw_map {
+.map-container,
+.map-container iframe {
     width: 100%;
-    height: 760px;
+    min-height: 100vh;
+    bottom: 0;
+}
+
+div.gm-style div:nth-child(11) {
+    top: 135px
+}
+
+.map-container #qw_map {
+    width: 100%;
     min-height: 100vh
 }
 
 .section_about {
     width: 100%;
-    min-height: 100vh;
     background-color: #fefefe
 }
 
@@ -9296,7 +9311,7 @@ ul.slick-dots li.slick-active button:before {
     }
 }
 
-.advantages {
+.adv {
     max-width: 1270px;
     width: 100%;
     display: -webkit-box;
@@ -9306,7 +9321,7 @@ ul.slick-dots li.slick-active button:before {
 }
 
 @media screen and (max-width:40rem) {
-    .advantages {
+    .adv {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -9314,7 +9329,7 @@ ul.slick-dots li.slick-active button:before {
     }
 }
 
-.advantages_item {
+.adv_item {
     width: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9331,26 +9346,26 @@ ul.slick-dots li.slick-active button:before {
 }
 
 @media screen and (max-width:71.25rem) {
-    .advantages_item {
+    .adv_item {
         padding: 0 2rem
     }
 }
 
 @media screen and (max-width:57.5rem) {
-    .advantages_item {
+    .adv_item {
         padding: 0 1rem
     }
 }
 
 @media screen and (max-width:40rem) {
-    .advantages_item {
+    .adv_item {
         width: 100%;
         margin-bottom: .5rem;
         padding: 0
     }
 }
 
-.advantages_item p {
+.adv_item p {
     width: 100%;
     font-size: .875rem;
     line-height: 24px;
@@ -9359,7 +9374,7 @@ ul.slick-dots li.slick-active button:before {
 }
 
 @media screen and (min-width:40rem) and (max-width:64rem) {
-    .advantages_item p {
+    .adv_item p {
         font-size: .75rem
     }
 }
@@ -9548,7 +9563,7 @@ ul.slick-dots li.slick-active button:before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #0a0a0a;
+    background-color: #020202;
     width: 100%
 }
 
@@ -9795,7 +9810,7 @@ ul.slick-dots li.slick-active button:before {
 
 .beer_border p {
     padding: .5rem 0;
-    background-color: #0a0a0a;
+    background-color: #020202;
     color: #fefefe;
     margin: 0
 }
@@ -10100,7 +10115,7 @@ ul.suslo li.one_suslo:after {
 }
 
 .section_reviews {
-    background-color: #0a0a0a;
+    background-color: #020202;
     color: #fefefe
 }
 
@@ -10244,7 +10259,7 @@ ul.suslo li.one_suslo:after {
     width: 100%;
     border-top: 1px solid #c00;
     border-bottom: 1px solid #c00;
-    background-color: #0a0a0a;
+    background-color: #020202;
     padding-bottom: 2.5rem;
     position: relative;
     padding-top: 5rem;
@@ -10480,7 +10495,7 @@ ul.suslo li.one_suslo:after {
 
 .section_contacts {
     width: 100%;
-    background-color: #0a0a0a;
+    background-color: #020202;
     color: #fefefe;
     height: 100%
 }
@@ -10566,7 +10581,7 @@ ul.suslo li.one_suslo:after {
     right: 0;
     left: 0;
     margin: 0 auto;
-    background-color: #0a0a0a
+    background-color: #020202
 }
 
 .border_info p {
@@ -11108,7 +11123,7 @@ ul.suslo li.one_suslo:after {
     transition: all 1s ease;
     text-align: center;
     position: absolute;
-    background-color: #0a0a0a
+    background-color: #020202
 }
 
 .circle__event__item {
@@ -11275,7 +11290,7 @@ ul.suslo li.one_suslo:after {
     min-height: 100vh;
     height: 800px;
     width: 100%;
-    background-color: #0a0a0a;
+    background-color: #020202;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11477,7 +11492,7 @@ ul.suslo li.one_suslo:after {
 
 .reveal_body {
     position: relative;
-    border: 1px solid #0a0a0a
+    border: 1px solid #020202
 }
 
 .reveal_body:after,
@@ -11486,7 +11501,7 @@ ul.suslo li.one_suslo:after {
     width: 10px;
     height: 10px;
     box-sizing: border-box;
-    border: 1px solid #0a0a0a;
+    border: 1px solid #020202;
     position: absolute
 }
 
@@ -11511,8 +11526,8 @@ ul.suslo li.one_suslo:after {
 .reveal_info {
     height: 70px;
     background-color: #fefefe;
-    color: #0a0a0a;
-    border-bottom: 2px solid #0a0a0a
+    color: #020202;
+    border-bottom: 2px solid #020202
 }
 
 .pimp_info,
