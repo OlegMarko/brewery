@@ -5554,27 +5554,27 @@ h1 {
     font-family: BitterRegular, Georgia, Times New Roman
 }
 
-.main_row {
+.main-container {
     max-width: 101.25rem;
     margin-left: auto;
     margin-right: auto
 }
 
 @media screen and (max-width:102.5rem) {
-    .main_row {
+    .main-container {
         max-width: 100%;
         padding: 0 4rem
     }
 }
 
 @media screen and (max-width:63.9375rem) {
-    .main_row {
+    .main-container {
         padding: 0 2rem
     }
 }
 
 @media screen and (max-width:40rem) {
-    .main_row {
+    .main-container {
         padding: 0 1rem
     }
 }
@@ -5593,7 +5593,7 @@ h1 {
     width: 100%
 }
 
-#nav-toggle {
+#toggle-nav {
     padding: 22px 6px;
     position: absolute;
     cursor: pointer;
@@ -5602,9 +5602,9 @@ h1 {
     z-index: 10
 }
 
-#nav-toggle span,
-#nav-toggle span:after,
-#nav-toggle span:before {
+#toggle-nav span,
+#toggle-nav span:after,
+#toggle-nav span:before {
     cursor: pointer;
     height: 2px;
     width: 34px;
@@ -5614,35 +5614,35 @@ h1 {
     content: ""
 }
 
-#nav-toggle span:before {
+#toggle-nav span:before {
     top: -10px
 }
 
-#nav-toggle span:after {
+#toggle-nav span:after {
     bottom: -10px
 }
 
-#nav-toggle span,
-#nav-toggle span:after,
-#nav-toggle span:before {
+#toggle-nav span,
+#toggle-nav span:after,
+#toggle-nav span:before {
     transition: all .3s ease-in-out
 }
 
-#nav-toggle.active span {
+#toggle-nav.active span {
     background-color: transparent
 }
 
-#nav-toggle.active span:after,
-#nav-toggle.active span:before {
+#toggle-nav.active span:after,
+#toggle-nav.active span:before {
     top: 0
 }
 
-#nav-toggle.active span:before {
+#toggle-nav.active span:before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
 }
 
-#nav-toggle.active span:after {
+#toggle-nav.active span:after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg)
 }
@@ -7737,7 +7737,7 @@ header .logo {
     z-index: 1
 }
 
-header .button_block,
+header .button-container,
 header .logo {
     position: absolute;
     left: 0;
@@ -7745,7 +7745,7 @@ header .logo {
     margin: auto
 }
 
-header .button_block {
+header .button-container {
     display: none;
     bottom: -130px;
     width: 50px;
@@ -7756,19 +7756,19 @@ header .button_block {
 }
 
 @media screen and (max-width:71.25rem) {
-    header .button_block {
+    header .button-container {
         display: block
     }
 }
 
-header .header__wrap {
+header .header-container {
     position: relative;
     width: calc(100% - 44px);
     margin: 0 auto
 }
 
-header .header__wrap:after,
-header .header__wrap:before {
+header .header-container:after,
+header .header-container:before {
     content: "";
     position: absolute;
     top: 0;
@@ -7781,25 +7781,25 @@ header .header__wrap:before {
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap:after,
-    header .header__wrap:before {
+    header .header-container:after,
+    header .header-container:before {
         display: none
     }
 }
 
-header .header__wrap:before {
+header .header-container:before {
     right: 5px;
     z-index: 1
 }
 
-header .header__wrap:after {
+header .header-container:after {
     left: 5px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     z-index: 1
 }
 
-header .header__wrap nav {
+header .header-container nav {
     height: 70px;
     width: 100%;
     display: -webkit-box;
@@ -7809,7 +7809,7 @@ header .header__wrap nav {
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap nav {
+    header .header-container nav {
         display: block;
         width: 225px;
         background-color: transparent;
@@ -7818,21 +7818,21 @@ header .header__wrap nav {
     }
 }
 
-header .header__wrap nav.open_menu .left__nav,
-header .header__wrap nav.open_menu .right__nav {
+header .header-container nav.open_menu .nav-l,
+header .header-container nav.open_menu .nav-r {
     display: block
 }
 
-header .header__wrap nav.open_menu .button_block {
+header .header-container nav.open_menu .button-container {
     bottom: -45px!important
 }
 
-header .header__wrap nav.open_menu .nav_figure {
+header .header-container nav.open_menu .nav_figure {
     display: block;
     margin-top: -1px
 }
 
-header .header__wrap ul {
+header .header-container ul {
     height: 100%;
     border-top: 1px solid #fcb040;
     border-bottom: 1px solid #fcb040;
@@ -7848,14 +7848,14 @@ header .header__wrap ul {
 }
 
 @media screen and (max-width:90rem) {
-    header .header__wrap ul {
+    header .header-container ul {
         -ms-flex-pack: distribute;
         justify-content: space-around
     }
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap ul {
+    header .header-container ul {
         width: 225px;
         height: 100%;
         border-top: 0;
@@ -7865,7 +7865,7 @@ header .header__wrap ul {
     }
 }
 
-header .header__wrap ul li {
+header .header-container ul li {
     display: inline;
     margin: 0 2rem;
     padding: 0 10px;
@@ -7873,19 +7873,19 @@ header .header__wrap ul li {
 }
 
 @media screen and (max-width:90rem) {
-    header .header__wrap ul li {
+    header .header-container ul li {
         margin: 0
     }
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap ul li {
+    header .header-container ul li {
         display: block;
         margin: .8rem 0 0
     }
 }
 
-header .header__wrap ul li a {
+header .header-container ul li a {
     background-color: #0a0a0a;
     padding: 0 2px;
     position: relative;
@@ -7897,22 +7897,22 @@ header .header__wrap ul li a {
     z-index: 1
 }
 
-header .header__wrap ul li a:hover {
+header .header-container ul li a:hover {
     color: #fcb040
 }
 
-header .header__wrap ul li a:hover:after {
+header .header-container ul li a:hover:after {
     bottom: 0;
     opacity: 0
 }
 
-header .header__wrap ul li a:hover:before {
+header .header-container ul li a:hover:before {
     top: 0;
     opacity: 0
 }
 
-header .header__wrap ul li a:after,
-header .header__wrap ul li a:before {
+header .header-container ul li a:after,
+header .header-container ul li a:before {
     content: "";
     position: absolute;
     right: 0;
@@ -7926,40 +7926,40 @@ header .header__wrap ul li a:before {
     z-index: 0
 }
 
-header .header__wrap ul li a:before {
+header .header-container ul li a:before {
     top: 26px
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap ul li a:before {
+    header .header-container ul li a:before {
         content: none
     }
 }
 
-header .header__wrap ul li a:after {
+header .header-container ul li a:after {
     bottom: 19px
 }
 
-header .header__wrap ul li.current_page_item a {
+header .header-container ul li.current_page_item a {
     color: #fcb040
 }
 
-header .header__wrap ul li.current_page_item a:after {
+header .header-container ul li.current_page_item a:after {
     bottom: 0;
     opacity: 0
 }
 
-header .header__wrap ul li.current_page_item a:before {
+header .header-container ul li.current_page_item a:before {
     top: 0;
     opacity: 0
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap ul li.current_page_item {
+    header .header-container ul li.current_page_item {
         position: relative
     }
-    header .header__wrap ul li.current_page_item:after,
-    header .header__wrap ul li.current_page_item:before {
+    header .header-container ul li.current_page_item:after,
+    header .header-container ul li.current_page_item:before {
         content: "";
         opacity: 1;
         background-position: 50%;
@@ -7973,16 +7973,16 @@ header .header__wrap ul li.current_page_item a:before {
         bottom: 0;
         margin: auto 0
     }
-    header .header__wrap ul li.current_page_item:before {
+    header .header-container ul li.current_page_item:before {
         right: -8px;
     }
-    header .header__wrap ul li.current_page_item:after {
+    header .header-container ul li.current_page_item:after {
         left: -8px;
     }
 }
 
-header .header__wrap .left__nav,
-header .header__wrap .right__nav {
+header .header-container .nav-l,
+header .header-container .nav-r {
     height: 70px;
     width: 50%;
     position: relative;
@@ -7991,8 +7991,8 @@ header .header__wrap .right__nav {
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap .left__nav,
-    header .header__wrap .right__nav {
+    header .header-container .nav-l,
+    header .header-container .nav-r {
         height: 100%;
         width: 220px;
         margin: 0 auto;
@@ -8005,16 +8005,16 @@ header .header__wrap .right__nav {
     }
 }
 
-header .header__wrap .left__nav ul,
-header .header__wrap .right__nav ul {
+header .header-container .nav-l ul,
+header .header-container .nav-r ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap .left__nav ul,
-    header .header__wrap .right__nav ul {
+    header .header-container .nav-l ul,
+    header .header-container .nav-r ul {
         padding: 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -8024,21 +8024,21 @@ header .header__wrap .right__nav ul {
     }
 }
 
-header .header__wrap .left__nav ul {
+header .header-container .nav-l ul {
     position: relative;
     padding-right: 8rem;
     padding-left: 2rem
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap .left__nav ul {
+    header .header-container .nav-l ul {
         margin: 3.5rem auto 0;
         padding: 2.8125rem 0 0
     }
 }
 
-header .header__wrap .left__nav:after,
-header .header__wrap .left__nav:before {
+header .header-container .nav-l:after,
+header .header-container .nav-l:before {
     content: "";
     position: absolute;
     right: 0;
@@ -8049,51 +8049,51 @@ header .header__wrap .left__nav:before {
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap .left__nav:after,
-    header .header__wrap .left__nav:before {
+    header .header-container .nav-l:after,
+    header .header-container .nav-l:before {
         content: none
     }
 }
 
-header .header__wrap .left__nav:before {
+header .header-container .nav-l:before {
     top: 0;
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1)
 }
 
-header .header__wrap .left__nav:after {
+header .header-container .nav-l:after {
     bottom: 0
 }
 
-header .header__wrap .right__nav ul {
+header .header-container .nav-r ul {
     padding-left: 8rem;
     padding-right: 2rem
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap .right__nav ul {
+    header .header-container .nav-r ul {
         padding: 0
     }
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap .right__nav {
+    header .header-container .nav-r {
         margin-top: -1px
     }
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap .right__nav li:last-child {
+    header .header-container .nav-r li:last-child {
         margin-bottom: 2rem
     }
-    header .header__wrap .right__nav li:last-child:before {
+    header .header-container .nav-r li:last-child:before {
         content: ""!important;
         top: 31px
     }
 }
 
-header .header__wrap .right__nav:after,
-header .header__wrap .right__nav:before {
+header .header-container .nav-r:after,
+header .header-container .nav-r:before {
     content: "";
     position: absolute;
     right: 0;
@@ -8104,25 +8104,25 @@ header .header__wrap .right__nav:before {
 }
 
 @media screen and (max-width:71.25rem) {
-    header .header__wrap .right__nav:after,
-    header .header__wrap .right__nav:before {
+    header .header-container .nav-r:after,
+    header .header-container .nav-r:before {
         content: none
     }
 }
 
-header .header__wrap .right__nav:after {
+header .header-container .right__nav:after {
     bottom: 0;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1)
 }
 
-header .header__wrap .right__nav:before {
+header .header-container .right__nav:before {
     top: 0;
     -webkit-transform: scale(1);
     transform: scale(1)
 }
 
-.magic_arrow {
+.arrow_1 {
     position: absolute;
     height: 100%;
     top: 0;
@@ -8137,35 +8137,35 @@ header .header__wrap .right__nav:before {
 }
 
 @media screen and (max-width:90rem) {
-    .magic_arrow {
+    .arrow_1 {
         width: 10px
     }
 }
 
 @media screen and (max-width:71.25rem) {
-    .magic_arrow {
+    .arrow_1 {
         display: none
     }
 }
 
-#magic_arrow-left {
+#arrow_1-l {
     left: 30px
 }
 
 @media screen and (max-width:90rem) {
-    #magic_arrow-left {
+    #arrow_1-l {
         left: -17px
     }
 }
 
-#magic_arrow-right {
+#arrow_1-r {
     right: 30px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1)
 }
 
 @media screen and (max-width:90rem) {
-    #magic_arrow-right {
+    #arrow_1-r {
         right: -17px
     }
 }
