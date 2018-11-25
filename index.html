@@ -59,68 +59,44 @@
 </header>
 
 <main class="main">
-    <section class="section_intro">
-        <div class="video__wrap">
-            <video id="intro_video" controls="controls" autoplay="autoplay" loop="loop" preload="auto" poster="files/poster.jpg" >
-
-                <source src="files/puvovarna.webm" type="video/webm"/>
-                <source src="files/puvovarna.ogv" type="video/ogg"/>
-                If you can read this, your browser does not support the video tag :(
+    <section class="section-block">
+        <div class="video-container">
+            <video id="video-el" autoplay="autoplay" loop="loop" muted preload="auto" poster="files/poster.jpg" >
+                <source src="./files/puvovarna.webm" type="video/webm"/>
+                <source src="./files/puvovarna.ogv" type="video/ogg"/>
+                <source src="./files/puvovarna.mp4" type="video/mp4"/>
+                Оновіть свій браузер
             </video>
         </div>
 
-        <div class="ribbon_block_wrap">
-            <div class="ribbon_block hide-for-small-only">
-                <ul>
-                    <li>
-                        Свіже
-                        <span>Cвіже</span>
-                    </li>
-                    <li>Нефільтроване
-                        <span>Нефільтроване</span>
-                    </li>
-                    <li>
-                        Твоє
-                        <span>Твоє</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="ribbon_block_mobile show-for-small-only">
-                <div class="logo_mobile" style="background-image: url(./logo.png);"></div>
-            </div>
-        </div>
-
-        <div class="button_assort_wrap">
-            <a href="about.html" class="button_assort">Наше пиво</a>
+        <div class="button-container-1">
+            <a href="about.html" class="btn-to-about">Про нас</a>
         </div>
     </section>
 </main>
 
 <footer>
-    <div class="row main-container footer__row ">
-
-        <div class="footer__part footer__part-left">
-            <div class="footer__part_item">
-                <i class="i_footer" style="background-image: url(./time.svg);"></i>
-                <ul><li>Пн-Пт з 9-00 до 21-00</li><li>Сб-Нд з 10-00 до 21-00</li></ul>            </div>
-
-            <div class="footer__part_item">
-                <i class="i_footer" style="background-image: url(./address.svg);"></i>
-                <ul>
-                    <ul><li>с. Микуличин</li><li>вул. Грушевського, 134д</li></ul>            </ul>
+    <div class="row main-container footer-container">
+        <div class="footer-b footer-b-l">
+            <div class="footer-i">
+                <i class="i-footer" style="background-image: url(./time.svg);"></i>
+                <ul><li>Пн-Пт з 9-00 до 21-00</li><li>Сб-Нд з 10-00 до 21-00</li></ul>
             </div>
-        </div>
-
-        <div class="footer__part footer__part-right">
-            <div class="footer__part_item">
-                <i class="i_footer" style="background-image: url(./phone-contact.svg);"></i>
+            <div class="footer-i">
+                <i class="i-footer" style="background-image: url(./address.svg);"></i>
+                <ul>
+                    <ul><li>с. Микуличин</li><li>вул. Грушевського, 134д</li></ul>
+                </ul>
+            </div>
+            <div class="footer-i">
+                <i class="i-footer" style="background-image: url(./phone-contact.svg);"></i>
                 <ul>
                     <li><a href="tel:+380687500644" class="__cf_email__">+38 068 750 06 44</a></li>
                     <li><a href="mailto:karpaty7@ukr.net" class="__cf_email__">karpaty7@ukr.net</a></li>
                 </ul>
             </div>
-            <div class="footer__part_item">
-                <ul class="social_list">
+            <div class="footer-i">
+                <ul class="social-link">
                     <li>
                         <a href="https://www.facebook.com/jagerif/">
                             <i class="i_social i_facebook" ></i>

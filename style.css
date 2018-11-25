@@ -5366,14 +5366,14 @@ table.hover tr:nth-of-type(2n):hover {
 }
 
 @media screen and (max-width:39.9375em) {
-    .hide-for-small-only {
+    .small-hide-only {
         display: none!important
     }
 }
 
 @media screen and (max-width:0em),
 screen and (min-width:40em) {
-    .show-for-small-only {
+    .small-show-only {
         display: none!important
     }
 }
@@ -5798,7 +5798,7 @@ h1 {
     left: calc(0% + 77px)
 }
 
-.button_assort_wrap {
+.button-container-1 {
     height: 70px;
     width: 300px;
     position: absolute;
@@ -5811,12 +5811,12 @@ h1 {
 }
 
 @media screen and (max-width:40rem) {
-    .button_assort_wrap {
+    .button-container-1 {
         width: 250px
     }
 }
 
-.button_assort_wrap .button_assort {
+.button-container-1 .btn-to-about {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -5836,7 +5836,7 @@ h1 {
     box-sizing: border-box
 }
 
-.button_assort_wrap .button_arrow {
+.button-container-1 .button_arrow {
     position: absolute;
     height: 130px;
     width: 18px;
@@ -5853,12 +5853,12 @@ h1 {
     transform: rotate(-333deg)
 }
 
-.button_assort_wrap .button_arrow:last-child {
+.button-container-1 .button_arrow:last-child {
     -webkit-transform: rotate(333deg);
     transform: rotate(333deg)
 }
 
-.button_assort_wrap:before {
+.button-container-1:before {
     height: 41px;
     width: 35px;
     background-size: contain;
@@ -5869,8 +5869,8 @@ h1 {
     transform: rotate(20deg)
 }
 
-.button_assort_wrap:after,
-.button_assort_wrap:before {
+.button-container-1:after,
+.button-container-1:before {
     content: "";
     position: absolute;
     right: 0;
@@ -5878,7 +5878,7 @@ h1 {
     transition: all .5s ease
 }
 
-.button_assort_wrap:after {
+.button-container-1:after {
     background-image: url(../images/);
     width: 10px;
     height: 10px;
@@ -5888,21 +5888,21 @@ h1 {
     bottom: -40px
 }
 
-.button_assort_wrap:hover .button_arrow {
+.button-container-1:hover .button_arrow {
     -webkit-transform: rotate(-325deg);
     transform: rotate(-325deg)
 }
 
-.button_assort_wrap:hover .button_arrow:last-child {
+.button-container-1:hover .button_arrow:last-child {
     -webkit-transform: rotate(325deg);
     transform: rotate(325deg)
 }
 
-.button_assort_wrap:hover:before {
+.button-container-1:hover:before {
     top: -50px
 }
 
-.button_assort_wrap:hover:after {
+.button-container-1:hover:after {
     bottom: -20px
 }
 
@@ -5972,7 +5972,7 @@ h1 {
     left: -27px
 }
 
-.i_footer {
+.i-footer {
     display: inline-block;
     background-size: contain;
     background-repeat: no-repeat;
@@ -8190,21 +8190,22 @@ footer:before {
     height: 5px
 }
 
-footer .footer__part,
-footer .footer__row {
+footer .footer-b,
+footer .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    padding-bottom: 25px;
 }
 
-footer .footer__part {
-    width: 33.3%;
+footer .footer-b {
+    width: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
 }
 
-footer .footer__part_item {
+footer .footer-i {
     margin-top: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8212,7 +8213,7 @@ footer .footer__part_item {
     width: 50%
 }
 
-footer .footer__part_item ul:not(.social_list) {
+footer .footer-i ul:not(.social-link) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8222,11 +8223,11 @@ footer .footer__part_item ul:not(.social_list) {
     flex-direction: column
 }
 
-footer .footer__part_item ul:not(.social_list) li {
+footer .footer-i ul:not(.social-link) li {
     line-height: 2.1
 }
 
-footer .footer__part-center ul {
+footer .footer-b-center ul {
     color: #fefefe;
     width: 100%;
     display: -webkit-box;
@@ -8238,13 +8239,13 @@ footer .footer__part-center ul {
     flex-direction: column
 }
 
-footer .footer__part-center ul li {
+footer .footer-b-center ul li {
     font-size: .625rem;
     color: #fcb040;
     text-align: center
 }
 
-footer .footer__part-center ul li:first-child {
+footer .footer-b-center ul li:first-child {
     display: inline-block;
     height: 60px;
     width: 160px;
@@ -8253,20 +8254,20 @@ footer .footer__part-center ul li:first-child {
     flex-basis: 100%
 }
 
-footer .footer__part-center ul li:nth-child(2) {
+footer .footer-b-center ul li:nth-child(2) {
     display: inline-block;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     margin: .5rem 0
 }
 
-footer .footer__part-right .footer__part_item {
+footer .footerpart-r .footer-i {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end
 }
 
-footer .footer__part-right .social_list {
+footer .footerpart-r .social-link {
     width: 205px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8277,7 +8278,7 @@ footer .footer__part-right .social_list {
     flex-wrap: nowrap
 }
 
-footer .footer__part-right .social_list li a {
+footer .footerpart-r .social-link li a {
     display: inline-block;
     width: 25px;
     height: 25px
@@ -8296,28 +8297,28 @@ footer .footer ul li:last-child {
     footer {
         padding-bottom: 0
     }
-    footer .footer__part-left,
-    footer .footer__part-right {
+    footer .footer-b-l,
+    footer .footerpart-r {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap
     }
-    footer .footer__part-center ul {
+    footer .footer-b-center ul {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center
     }
-    footer .footer__part_item {
+    footer .footer-i {
         width: 100%;
         margin-bottom: 1rem
     }
 }
 
 @media screen and (max-width:63.9375rem) {
-    footer .footer__row {
+    footer .footer-container {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap
     }
-    footer .footer__part {
+    footer .footer-b {
         width: 100%;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -8327,27 +8328,27 @@ footer .footer ul li:last-child {
         -ms-flex-align: center;
         align-items: center
     }
-    footer .footer__part_item {
+    footer .footer-i {
         margin: 1rem 0;
         max-width: 205px
     }
-    footer .footer__part-right {
+    footer .footerpart-r {
         -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
         order: 0
     }
-    footer .footer__part-right .footer__part_item {
+    footer .footerpart-r .footer-i {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center
     }
-    footer .footer__part-center {
+    footer .footer-b-center {
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1
     }
-    footer .footer__part-center ul li:first-child,
-    footer .footer__part-center ul li:nth-child(2) {
+    footer .footer-b-center ul li:first-child,
+    footer .footer-b-center ul li:nth-child(2) {
         height: 50px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -8356,17 +8357,17 @@ footer .footer ul li:last-child {
         -ms-flex-align: center;
         align-items: center
     }
-    footer .footer__part-left {
+    footer .footer-b-l {
         -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
         order: 0
     }
-    footer .social_list {
+    footer .social-link {
         margin: 1rem 0
     }
 }
 
-.footer__part_item>ul>ul {
+.footer-i>ul>ul {
     margin-left: 0!important
 }
 
@@ -8795,7 +8796,7 @@ footer .footer ul li:last-child {
     margin: .5rem
 }
 
-.section_intro {
+.section-block {
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -8806,7 +8807,7 @@ footer .footer ul li:last-child {
 }
 
 @media screen and (max-width:40rem) {
-    .section_intro {
+    .section-block {
         min-height: 780px
     }
 }
@@ -8843,7 +8844,7 @@ footer .footer ul li:last-child {
     text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
 }
 
-.ribbon_block_wrap {
+.block-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -8856,18 +8857,18 @@ footer .footer ul li:last-child {
 }
 
 @media screen and (max-width:80rem) {
-    .ribbon_block_wrap {
+    .block-container {
         margin-top: 200px
     }
 }
 
 @media screen and (max-width:40rem) {
-    .ribbon_block_wrap {
+    .block-container {
         margin-top: 175px
     }
 }
 
-.ribbon_block_wrap .ribbon_block {
+.block-container .block-container-1 {
     margin: 0 auto;
     max-width: 542px;
     height: 486px;
@@ -8875,7 +8876,7 @@ footer .footer ul li:last-child {
     overflow: hidden
 }
 
-.ribbon_block_wrap .ribbon_block svg {
+.block-container .block-container-1 svg {
     max-width: 600px;
     height: 530px;
     position: absolute;
@@ -8887,18 +8888,18 @@ footer .footer ul li:last-child {
 }
 
 @media screen and (max-width:90rem) {
-    .ribbon_block_wrap .ribbon_block svg {
+    .block-container .block-container-1 svg {
         max-width: 550px;
         height: 480px
     }
 }
 
-.ribbon_block_wrap .ribbon_block_mobile {
+.block-container .block-container-1_mobile {
     width: 100%;
     height: 360px
 }
 
-.ribbon_block_wrap .ribbon_block_mobile .logo_mobile {
+.block-container .block-container-1_mobile .logo_mobile {
     width: 100%;
     height: 100%;
     background-position: 50%;
@@ -8907,7 +8908,7 @@ footer .footer ul li:last-child {
     background-size: contain
 }
 
-.ribbon_block_wrap ul {
+.block-container ul {
     max-width: 542px;
     height: 486px;
     width: 100%;
@@ -8915,7 +8916,7 @@ footer .footer ul li:last-child {
     margin: auto
 }
 
-.ribbon_block_wrap ul li {
+.block-container ul li {
     text-transform: uppercase;
     position: absolute;
     color: #fcb040;
@@ -8926,12 +8927,12 @@ footer .footer ul li:last-child {
 }
 
 @media screen and (max-width:90rem) {
-    .ribbon_block_wrap ul li {
+    .block-container ul li {
         font-size: 2rem
     }
 }
 
-.ribbon_block_wrap ul li span {
+.block-container ul li span {
     position: absolute;
     color: #fefefe;
     top: -3px;
@@ -8939,7 +8940,7 @@ footer .footer ul li:last-child {
     text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
 }
 
-.ribbon_block_wrap ul li:first-child {
+.block-container ul li:first-child {
     left: 245px;
     margin: auto;
     top: 120px;
@@ -8948,38 +8949,38 @@ footer .footer ul li:last-child {
 }
 
 @media screen and (max-width:90rem) {
-    .ribbon_block_wrap ul li:first-child {
+    .block-container ul li:first-child {
         top: 110px
     }
 }
 
-.ribbon_block_wrap ul li:nth-child(2) {
+.block-container ul li:nth-child(2) {
     top: 47%;
     left: 105px;
     font-family: BitterBold, Georgia, Times New Roman
 }
 
 @media screen and (max-width:90rem) {
-    .ribbon_block_wrap ul li:nth-child(2) {
+    .block-container ul li:nth-child(2) {
         top: 43%;
         left: 130px
     }
 }
 
-.ribbon_block_wrap ul li:last-child {
+.block-container ul li:last-child {
     left: 188px;
     bottom: 17%;
     font-family: BitterRegular, Georgia, Times New Roman
 }
 
 @media screen and (max-width:90rem) {
-    .ribbon_block_wrap ul li:last-child {
+    .block-container ul li:last-child {
         bottom: 25%;
         left: 200px
     }
 }
 
-#intro_video {
+#video-el {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -9003,13 +9004,13 @@ footer .footer ul li:last-child {
     height: 780px
 }
 
-.section_intro-video {
+.section-block-video {
     min-height: 100vh;
     position: relative;
     overflow: hidden
 }
 
-.section_intro-video .desk_container {
+.section-block-video .desk_container {
     position: absolute;
     left: 0;
     right: 0;
@@ -9032,7 +9033,7 @@ footer .footer ul li:last-child {
     z-index: 10
 }
 
-.section_intro-video #video {
+.section-block-video #video {
     position: absolute;
     top: 50%;
     left: 50%;
